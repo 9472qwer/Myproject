@@ -10,7 +10,7 @@ public:
     void operator=(Robot const &) = delete;
 
     //机械臂初始化
-    void init();
+    int init();
     //抓取扫描仪的零件
     void catch_scanner();
     //抓取货架的零件
