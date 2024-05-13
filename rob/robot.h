@@ -10,7 +10,7 @@ public:
     void operator=(Robot const &) = delete;
 
     //机械臂初始化
-    int init();
+    int rinit();
     //抓取扫描仪的零件
     void catch_scanner();
     //抓取货架的零件
@@ -21,8 +21,23 @@ public:
     void put_shelf();
     //返回机械臂的数据
     void return_data();
+    //返回python函数
+    void get_Python();
 
 private:
     //将构造函数声明为私有，以防止外部代码创建新实例
-    Robot(){};
+    Robot();
+    ~Robot();
+    // 6、根据类名实例化对象
+    PyObject *obj;
+
+    PyObject *init;
+    PyObject *location_init;
+    PyObject *is_move;
+    PyObject *rotate_150;
+    PyObject *crawl_int;
+    PyObject *crawl;
+    PyObject *read;
+    //识别到的零件的位置数组
+    std::vector<std::vector<int>> data;
 };
