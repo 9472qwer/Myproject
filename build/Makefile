@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/book/work/cpp_python
+CMAKE_SOURCE_DIR = /home/book/Myproject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/book/work/cpp_python/build
+CMAKE_BINARY_DIR = /home/book/Myproject/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/book/work/cpp_python/build/CMakeFiles /home/book/work/cpp_python/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/book/Myproject/build/CMakeFiles /home/book/Myproject/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/book/work/cpp_python/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/book/Myproject/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -150,6 +150,60 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+mqtt/mqtt.o: mqtt/mqtt.cpp.o
+
+.PHONY : mqtt/mqtt.o
+
+# target to build an object file
+mqtt/mqtt.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/mqtt/mqtt.cpp.o
+.PHONY : mqtt/mqtt.cpp.o
+
+mqtt/mqtt.i: mqtt/mqtt.cpp.i
+
+.PHONY : mqtt/mqtt.i
+
+# target to preprocess a source file
+mqtt/mqtt.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/mqtt/mqtt.cpp.i
+.PHONY : mqtt/mqtt.cpp.i
+
+mqtt/mqtt.s: mqtt/mqtt.cpp.s
+
+.PHONY : mqtt/mqtt.s
+
+# target to generate assembly for a file
+mqtt/mqtt.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/mqtt/mqtt.cpp.s
+.PHONY : mqtt/mqtt.cpp.s
+
+rob/robot.o: rob/robot.cpp.o
+
+.PHONY : rob/robot.o
+
+# target to build an object file
+rob/robot.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/rob/robot.cpp.o
+.PHONY : rob/robot.cpp.o
+
+rob/robot.i: rob/robot.cpp.i
+
+.PHONY : rob/robot.i
+
+# target to preprocess a source file
+rob/robot.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/rob/robot.cpp.i
+.PHONY : rob/robot.cpp.i
+
+rob/robot.s: rob/robot.cpp.s
+
+.PHONY : rob/robot.s
+
+# target to generate assembly for a file
+rob/robot.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/rob/robot.cpp.s
+.PHONY : rob/robot.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,6 +216,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... mqtt/mqtt.o"
+	@echo "... mqtt/mqtt.i"
+	@echo "... mqtt/mqtt.s"
+	@echo "... rob/robot.o"
+	@echo "... rob/robot.i"
+	@echo "... rob/robot.s"
 .PHONY : help
 
 

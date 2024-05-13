@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/main.dir/main.cpp.o"
+  "CMakeFiles/main.dir/mqtt/mqtt.cpp.o"
+  "CMakeFiles/main.dir/rob/robot.cpp.o"
   "main.pdb"
   "main"
 )

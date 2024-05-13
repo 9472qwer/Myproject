@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/book/work/cpp_python
+CMAKE_SOURCE_DIR = /home/book/Myproject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/book/work/cpp_python/build
+CMAKE_BINARY_DIR = /home/book/Myproject/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/main.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/main.dir/flags.make
 
 CMakeFiles/main.dir/main.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/book/work/cpp_python/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/main.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/main.cpp.o -c /home/book/work/cpp_python/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/book/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/main.cpp.o -c /home/book/Myproject/main.cpp
 
 CMakeFiles/main.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/main.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/book/work/cpp_python/main.cpp > CMakeFiles/main.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/book/Myproject/main.cpp > CMakeFiles/main.dir/main.cpp.i
 
 CMakeFiles/main.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/main.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/book/work/cpp_python/main.cpp -o CMakeFiles/main.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/book/Myproject/main.cpp -o CMakeFiles/main.dir/main.cpp.s
 
 CMakeFiles/main.dir/main.cpp.o.requires:
 
@@ -81,18 +81,70 @@ CMakeFiles/main.dir/main.cpp.o.provides: CMakeFiles/main.dir/main.cpp.o.requires
 CMakeFiles/main.dir/main.cpp.o.provides.build: CMakeFiles/main.dir/main.cpp.o
 
 
+CMakeFiles/main.dir/mqtt/mqtt.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/mqtt/mqtt.cpp.o: ../mqtt/mqtt.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/book/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/mqtt/mqtt.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/mqtt/mqtt.cpp.o -c /home/book/Myproject/mqtt/mqtt.cpp
+
+CMakeFiles/main.dir/mqtt/mqtt.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/mqtt/mqtt.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/book/Myproject/mqtt/mqtt.cpp > CMakeFiles/main.dir/mqtt/mqtt.cpp.i
+
+CMakeFiles/main.dir/mqtt/mqtt.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/mqtt/mqtt.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/book/Myproject/mqtt/mqtt.cpp -o CMakeFiles/main.dir/mqtt/mqtt.cpp.s
+
+CMakeFiles/main.dir/mqtt/mqtt.cpp.o.requires:
+
+.PHONY : CMakeFiles/main.dir/mqtt/mqtt.cpp.o.requires
+
+CMakeFiles/main.dir/mqtt/mqtt.cpp.o.provides: CMakeFiles/main.dir/mqtt/mqtt.cpp.o.requires
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/mqtt/mqtt.cpp.o.provides.build
+.PHONY : CMakeFiles/main.dir/mqtt/mqtt.cpp.o.provides
+
+CMakeFiles/main.dir/mqtt/mqtt.cpp.o.provides.build: CMakeFiles/main.dir/mqtt/mqtt.cpp.o
+
+
+CMakeFiles/main.dir/rob/robot.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/rob/robot.cpp.o: ../rob/robot.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/book/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/rob/robot.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/rob/robot.cpp.o -c /home/book/Myproject/rob/robot.cpp
+
+CMakeFiles/main.dir/rob/robot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/rob/robot.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/book/Myproject/rob/robot.cpp > CMakeFiles/main.dir/rob/robot.cpp.i
+
+CMakeFiles/main.dir/rob/robot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/rob/robot.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/book/Myproject/rob/robot.cpp -o CMakeFiles/main.dir/rob/robot.cpp.s
+
+CMakeFiles/main.dir/rob/robot.cpp.o.requires:
+
+.PHONY : CMakeFiles/main.dir/rob/robot.cpp.o.requires
+
+CMakeFiles/main.dir/rob/robot.cpp.o.provides: CMakeFiles/main.dir/rob/robot.cpp.o.requires
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/rob/robot.cpp.o.provides.build
+.PHONY : CMakeFiles/main.dir/rob/robot.cpp.o.provides
+
+CMakeFiles/main.dir/rob/robot.cpp.o.provides.build: CMakeFiles/main.dir/rob/robot.cpp.o
+
+
 # Object files for target main
 main_OBJECTS = \
-"CMakeFiles/main.dir/main.cpp.o"
+"CMakeFiles/main.dir/main.cpp.o" \
+"CMakeFiles/main.dir/mqtt/mqtt.cpp.o" \
+"CMakeFiles/main.dir/rob/robot.cpp.o"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
 main: CMakeFiles/main.dir/main.cpp.o
+main: CMakeFiles/main.dir/mqtt/mqtt.cpp.o
+main: CMakeFiles/main.dir/rob/robot.cpp.o
 main: CMakeFiles/main.dir/build.make
 main: /home/book/miniconda3/envs/cpp_python/lib/libpython3.9.so
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/book/work/cpp_python/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/book/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -101,6 +153,8 @@ CMakeFiles/main.dir/build: main
 .PHONY : CMakeFiles/main.dir/build
 
 CMakeFiles/main.dir/requires: CMakeFiles/main.dir/main.cpp.o.requires
+CMakeFiles/main.dir/requires: CMakeFiles/main.dir/mqtt/mqtt.cpp.o.requires
+CMakeFiles/main.dir/requires: CMakeFiles/main.dir/rob/robot.cpp.o.requires
 
 .PHONY : CMakeFiles/main.dir/requires
 
@@ -109,6 +163,6 @@ CMakeFiles/main.dir/clean:
 .PHONY : CMakeFiles/main.dir/clean
 
 CMakeFiles/main.dir/depend:
-	cd /home/book/work/cpp_python/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/book/work/cpp_python /home/book/work/cpp_python /home/book/work/cpp_python/build /home/book/work/cpp_python/build /home/book/work/cpp_python/build/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/book/Myproject/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/book/Myproject /home/book/Myproject /home/book/Myproject/build /home/book/Myproject/build /home/book/Myproject/build/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/main.dir/depend
 
